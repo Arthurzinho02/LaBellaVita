@@ -1,0 +1,118 @@
+{% extends 'Index.html' %}
+
+{% block body %} 
+
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Marcellus&family=Marcellus+SC&display=swap');
+
+        .fundo {
+            height: 530px;
+        }
+
+        .titulos {
+            font-size: 45px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .marcellus-sc-regular {
+            font-family: "Marcellus SC", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .texto {
+            font-size: 15px;
+        }
+
+        .inter {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0;
+        }
+
+        .paragrafo {
+            text-indent: 25px;
+            text-align: justify;
+        }
+
+        .fund{
+            display: flex;
+            justify-content: center;
+        }
+
+        .titulo-fund{
+            padding-left: 100px;
+            padding-top: 50px;
+        }
+
+    </style>
+    <main>
+        <div class="fundo row justify-content-around align-items-center"
+            style="background-color: #7E4F3B">
+            <div class="col-4" style="color:#FFFBF2;">
+                <h1 class="titulos marcellus-sc-regular">Nossa história</h1>
+                <p class="inter texto lh-base paragrafo">"La Bella Vita" nasceu do sonho compartilhado de amigos apaixonados pela
+                    beleza e pelo cuidado com os
+                    outros. Após anos de experiência em salões renomados, decidimos unir forças para criar algo único.
+                    Com
+                    determinação e dedicação, inauguramos o salão, que se destacou desde o primeiro dia pela qualidade
+                    dos
+                    serviços, ambiente acolhedor e atendimento personalizado. Cada detalhe do espaço foi cuidadosamente
+                    pensado
+                    para proporcionar uma experiência sensorial única, fazendo com que os clientes se sintam especiais e
+                    mimados.</p>
+            </div>
+            <div class="col-4">
+                <img style="max-width: 400px;" src="static/img/Sobresalão.png" alt="Salão">
+            </div>
+        </div>
+        <div class="fundo row justify-content-around align-items-center">
+            <div class="col-4">
+                <img src="static/img/Sobremassagem.png" alt="Salão">
+            </div>
+            <div class="col-4" style="color:#7E4F3B">
+                <h1 class="titulos marcellus-sc-regular">Visão & Missão</h1>
+                <p class="inter texto lh-base paragrafo"> Na La Bella Vita, nossa missão é proporcionar uma experiência
+                    excepcional de beleza, onde cada cliente se sente valorizado e cuidado. Buscamos alcançar isso
+                    através de serviços de alta qualidade, ambiente acolhedor e produtos premium, realçando a beleza
+                    interior e exterior de nossos clientes. Nossa visão é ser reconhecido como o principal destino de
+                    beleza, onde a excelência é prioridade e a satisfação do cliente é fundamental. Queremos criar uma
+                    comunidade que celebra a beleza em todas as suas formas, promovendo autoexpressão e empoderamento
+                    pessoal.</p>
+            </div>
+        </div>
+        <div class="fundo row justify-content-around align-items-center"
+        style="background-color: #7E4F3B">
+            <h1 class="titulo-fund marcellus-sc-regular" style="color:#FFFBF2;">Nosso fundadores</h1>
+            <div class="col-4" style="color:#FFFBF2">
+                <div class="fund">
+                    <div class="col p-3">
+                        <img style="height: 250px;" src="static/img/julia.png" alt="Juliana Matos">
+                        <p class="text-center">Juliana Matos</p>
+                    </div>
+                    <div class="col p-3"> 
+                        <img style="height: 250px;" src="static/img/camila.png" alt="Camila Cabello">
+                        <p class="text-center">Camila Cabello</p>
+                    </div>
+                    <div class="col p-3">
+                        <img style="height: 250px;" src="static/img/lucas.png" alt="Lucas Fantinelli">
+                        <p class="text-center">Lucas Fantinelli</p>
+                    </div>
+                    <div class="col p-3">
+                        <img style="height: 250px;" src="static/img/isa.png" alt="Isabela Siqueira">
+                        <p class="text-center">Isabela Siqueira</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+
+{% endblock %}

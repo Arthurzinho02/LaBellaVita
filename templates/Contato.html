@@ -1,0 +1,148 @@
+{% extends 'Index.html' %}
+
+{% block body %}
+
+<body>
+
+    <h1>Contate-nos</h1>
+    <div class="container d-flex justify-content-center"> 
+        <form>
+            <input type="text" class="formu" id="nomeee" placeholder="Insira seu nome">
+            <input type="email" class="formu" id="email" placeholder="Insira seu email">
+            <input type="text" class="formu" id="mensagem" placeholder="Insira sua mensagem">
+            <button class="btn botaoo">Enviar</button>
+        </form>
+    </div>
+    <div class="infos">
+        <div class=" container caixaMenor">
+            <div class="escrita">
+                <span style="color: #FFFFFF; background-color: #7E4F3B; position: absolute; width: 50px; height: 
+                40px; z-index: 2; left: 50%;
+        transform: translateX(-680%); padding-top: 8px;top: -25px; text-align: center;" class="material-symbols-outlined">
+                    schedule
+                    </span>
+                <h5>Horário de funcionamento</h5>
+                <p>Seg...........13h-18h</p>
+                <p>Ter-Sex......9h-19h</p>
+                <p>Sáb.............9h-18h</p>
+                <p>Dom.........Fechado</p>
+
+            </div>
+
+            <div class="escrita">
+                <span style="color: #FFFFFF; background-color: #7E4F3B; position: absolute; width: 50px; height: 
+                40px; z-index: 2; left: 50%;
+        transform: translateX(-50%); padding-top: 8px;top: -25px; text-align: center;" class="material-symbols-outlined">
+                    phone_iphone
+                    </span>
+                <h5>Contato</h5>
+                <p>(11) 99999-9999</p>
+                <p>@labellavita</p>
+                <p>labellavita@gmail.com</p>
+            </div>
+
+            <div class="escrita">
+                <span style="color: #FFFFFF; background-color: #7E4F3B; position: absolute; width: 50px; height: 
+                40px; z-index: 2;left: 50%;
+        transform: translateX(580%); padding-top: 8px;top: -25px; text-align: center" class="material-symbols-outlined">
+                    location_on
+                    </span>
+                <h5>Localização</h5>
+                <p>Rua Trastevere, 17 - Vila Itália, Jundiaí -SP</p>
+            </div>
+        </div>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&display=swap');
+    
+        body {
+            background-color: #FFFFFF;
+            padding-bottom: 250px;
+        }
+        .escrita{
+            max-width: 160px;
+            text-align: center;
+        }
+        .caixaMenor{
+            width: 800;
+            margin-left: 70px ;
+            height: 200;
+            position: relative;
+            background-color: #FFFBF2;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            z-index: 1;
+            top: -30px;
+            text-align: center
+
+
+        }
+        h5{
+            font-size: 20px;
+            color: #7E4F3B;
+            margin: 0px;
+            margin-top: 15px
+        }
+        p{
+            font-size: 14px;
+            color: #7E4F3B;
+            margin: 5px;
+            text-align: center;
+
+        }
+        .botaoo{
+            border-radius: 0;
+            border-width: 2;
+            border-color: #7E4F3B;
+            color: #7E4F3B;
+            margin-top: 20px;
+            display: flex;
+            justify-items: end;
+            margin-left: auto;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .infos{
+            width: 100vw;
+            height: 210px;
+            margin: 0;
+            margin-top: 0;
+            padding: 0;
+            background-color: #7E4F3B;
+            position: fixed;
+            bottom: 0; 
+            z-index: 0;
+        }
+        h1 {
+            color: #7E4F3B;
+            font-family: "Marcellus SC", serif;
+            font-weight: 400;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .formu {
+            margin-top: 20px;
+            border: none;
+            border-bottom: 1px solid #7E4F3B;
+            background-color: transparent;
+            outline: none;
+            width: 500px;
+            color: #7E4F3B; 
+            padding: 1px 0px 5px 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .formu::placeholder{
+            color: #a8674fda;
+            font-size: 15px;
+            font-weight: 400;
+        
+        }
+    </style>
+</body>
+
+{% endblock body %}

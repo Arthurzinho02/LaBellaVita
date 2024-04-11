@@ -1,0 +1,66 @@
+{% extends 'Index.html' %}
+
+{% block body %}
+
+<body>
+    <div class="caixa">
+        <h2>Cadastro</h2>
+        <form>
+            <input type="text" class="formu" id="nomeee" placeholder="Insira seu nome">
+            <input type="email" class="formu" id="email" placeholder="Insira seu email">
+            <input type="password" class="formu" id="password" placeholder="Insira sua senha">
+        </form>
+        <button type="submit" class="btn botaoo">Cadastro</button>
+    </div>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&display=swap');
+
+    body {
+        background-color: #FFFBF2;
+    }
+    .botaoo{
+        border-radius: 10px;
+        border-width: 1;
+        border-color: #ffffff;
+        color: white;
+        margin-top: 30px
+    }
+    .caixa {
+        background-color: #7E4F3B;
+        width: 350px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        margin: 50px auto;
+        padding-top: 30px;
+        
+        flex-direction: column;
+    }
+    h2 {
+        color: #ffffff;
+        font-family: "Marcellus SC", serif;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+    .formu {
+        margin-top: 25px;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        background-color: transparent;
+        outline: none;
+        width: 280px;
+        color: #ffffff; 
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    .formu::placeholder{
+        color: white;
+        font-size: 15px
+    }
+</style>
+</body>
+
+
+
+{% endblock body %}

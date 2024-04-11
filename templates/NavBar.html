@@ -1,0 +1,188 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Marcellus+SC&display=swap');
+</style>
+
+{% if nav==1: %}
+  <nav class="navbar navbar-expand-lg" style="background-color: #FFFFFF;  border-bottom: 1px #D9CDCD solid;">
+    <div class="container-fluid">
+      <div id="navbarNav" class="d-flex justify-content-between align-items-center w-100">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a style="font-family:Inter, sans-serif; color: #7E4F3B;"
+            class="nav-link active" aria-current="page" href="/sobre">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a  style="font-family:Inter, sans-serif; color: #7E4F3B;" class="nav-link active" aria-current="page" href="/contato">Contato</a>
+          </li>
+        </ul>
+
+        <a style="font-family: Marcellus SC, serif; font-size: 25px; color: #7E4F3B;" class="navbar-brand" href="#">La Bella Vita</a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <span class="material-symbols-outlined" style="color: #7E4F3B;">
+                home
+                </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">
+              <span class="material-symbols-outlined" style="color: #7E4F3B;">account_circle</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </nav>
+
+{% elif nav==2 %}
+<!-- Contato -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #FFFFFF; border-bottom: 1px #D9CDCD solid;">
+    <div class="container-fluid">
+      <div id="navbarNav" class="d-flex justify-content-between align-items-center w-100">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a style="font-family:Inter, sans-serif; color: #7E4F3B;"
+            class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a  style="font-family:Inter, sans-serif; color: #7E4F3B;" class="nav-link active" aria-current="page" href="/sobre">Sobre Nós</a>
+          </li>
+        </ul>
+
+        <a style="font-family: Marcellus SC, serif; font-size: 25px; color: #7E4F3B;" class="navbar-brand" href="#">La Bella Vita</a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/faq">
+              <span class="material-symbols-outlined" style="color: #7E4F3B;">
+                help
+                </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">
+              <span class="material-symbols-outlined" style="color: #7E4F3B;">account_circle</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </nav>
+
+{% elif nav==3 %}
+<!-- Sobre nos -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #FFFFFF; border-bottom: 1px #D9CDCD solid;">
+    <div class="container-fluid">
+      <div id="navbarNav" class="d-flex justify-content-between align-items-center w-100">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a style="font-family:Inter, sans-serif; color: #7E4F3B;"
+            class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a  style="font-family:Inter, sans-serif; color: #7E4F3B;" class="nav-link active" aria-current="page" href="/contato">Contato</a>
+          </li>
+        </ul>
+
+        <a style="font-family: Marcellus SC, serif; font-size: 25px; color: #7E4F3B;" class="navbar-brand" href="#">La Bella Vita</a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/faq">
+              <span class="material-symbols-outlined" style="color: #7E4F3B;">
+                help
+                </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">
+              <span class="material-symbols-outlined" style="color: #7E4F3B;">account_circle</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </nav> 
+
+{% elif nav==4 %}
+  <nav class="navbar navbar-expand-lg" style="background-color: #FFFFFF; border-bottom: 1px #D9CDCD solid;">
+    <div class="container-fluid">
+      <div id="navbarNav" class="d-flex justify-content-between align-items-center w-100">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a style="font-family:Inter, sans-serif; color: #7E4F3B;"
+            class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a  style="font-family:Inter, sans-serif; color: #7E4F3B;" class="nav-link active" aria-current="page" href="/contato">Contato</a>
+          </li>
+        </ul>
+
+        <a style="font-family: Marcellus SC, serif; font-size: 25px; color: #7E4F3B;" class="navbar-brand" href="#">La Bella Vita</a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div style="background-color: #D9CDCD; width: 100px; border-radius: 50px;">
+                <span class="material-symbols-outlined" style="color: #7E4F3B;  padding-left: 5px; padding-top: 2px;">
+                  search
+                  </span>
+              </div>
+            </a>
+          </li>
+          <div class="vertical-line" style="border-left: 1px solid #7E4F3B; height: 40px;"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="material-symbols-outlined position-relative" style="color: #7E4F3B;">calendar_month
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="font-size: 7px; background-color: #7E4F3B; width: 15px; height: 15px;">
+                </span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </nav> 
+
+{% else: %}
+  <nav class="navbar navbar-expand-lg" style="background-color: #FFFBF2; border-bottom: 1px #D9CDCD solid;">
+      <div class="container-fluid">
+        <div id="navbarNav" class="d-flex justify-content-between align-items-center w-100">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a style="font-family:Inter, sans-serif; color: #7E4F3B;"
+              class="nav-link active" aria-current="page" href="/sobre">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a  style="font-family:Inter, sans-serif; color: #7E4F3B;" class="nav-link active" aria-current="page" href="/contato">Contato</a>
+            </li>
+          </ul>
+    
+          <a style="font-family: Marcellus SC, serif; font-size: 25px; color: #7E4F3B;" class="navbar-brand" href="#">La Bella Vita</a>
+    
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/faq">
+                <span class="material-symbols-outlined" style="color: #7E4F3B;" >
+                  help
+                  </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">
+                <span class="material-symbols-outlined" style="color: #7E4F3B;">account_circle</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+  </nav>
+{% endif %}
+

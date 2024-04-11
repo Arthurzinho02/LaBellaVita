@@ -1,0 +1,92 @@
+{% extends 'Index.html' %}
+
+{% block body %} 
+    <main>
+        <div class="sidebar">
+            <h1 class="marcellus-sc-regular">Categorias</h1>
+        </div>
+        <div class="content">
+            <div class="category">
+                <img src="static/img/CatePele.png" alt="Cuidados com a pele">
+                <a class="inter" href="">Cuidados com a pele</a>
+            </div>
+            <div class="category">
+                <img src="static/img/CateCabelo.png" alt="Cuidados com o cabelo">
+                <a class="inter" href="">Cuidados com o cabelo</a>
+            </div>
+            <div class="category">
+                <img src="static/img/CateUnha.png" alt="Cuidados com as unhas">
+                <a class="inter" href="">Cuidados com as unhas</a>
+            </div>
+            <div class="category">
+                <img src="static/img/CateCorpo.png" alt="Cuidados com o corpo">
+                <a class="inter" href="">Cuidados com o corpo</a>
+            </div>
+            <div class="category">
+                <img src="static/img/CateEstetica.png" alt="Procedimentos esteticos">
+                <a class="inter" href="">Procedimentos esteticos</a>
+            </div>
+            <div class="category">
+                <img src="static/img/CateMake.png" alt="Maquiagem">
+                <a class="inter" href="ServMaq">Maquiagem</a>
+            </div>
+        </div>
+    </main>
+    <style>
+        main {
+            display: flex;
+        }
+        .sidebar {
+            width: 750px;
+            height: 100vh;
+            background-color: #7E4F3B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        .category {
+            width: 210px;
+            height: 220px;
+            background-color: #FFFBF2;
+            margin-left: 30px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .category img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .category p {
+            color: #7E4F3B;
+            font-size: 14px;
+            text-align: center;
+        }
+        .marcellus-sc-regular {
+            font-family: "Marcellus SC", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #ffffff;
+            font-size: 45px;
+        }
+        .inter {
+            font-family: "Inter", sans-serif;
+            font-style: normal;
+        }
+        a{
+            text-decoration: none;
+            color: #7E4F3B;
+        }
+    </style>
+{% endblock %} 

@@ -1,0 +1,93 @@
+{% extends 'Index.html' %}
+
+{% block body %} 
+
+    <main style="display: flex;">
+        <div style="width: 550px; height: 100vh; background-color: #7E4F3B;">
+            <h1 class="marcellus-sc-regular mt-5" style="color: #ffffff; font-size: 45px; margin-left: 40px;">FAQ</h1>
+            <img src="static/img/FaqFoto.png" style="width: 340px; height: 400px; margin-top: 20px; margin-left: 40px" alt="">
+        </div>
+        <div class="content">
+            <ul>
+                <li class="faq inter"> <p> Quais são os serviços oferecidos pelo salão de beleza? <span class="material-symbols-outlined add"></span> </p>
+                    <div class="faq-content">Oferecemos uma ampla gama de serviços, incluindo cortes de cabelo, coloração, tratamentos capilares, manicure, pedicure, depilação, maquiagem, massagens, tratamentos faciais, e muito mais.</div></li>
+                <li class="faq inter"> <p>Quanto tempo em média leva para realizar cada serviço? <span class="material-symbols-outlined add"></span> </p>
+                    <div class="faq-content">O tempo de duração varia dependendo do serviço solicitado. Por exemplo, um corte de cabelo simples pode levar cerca de 30 minutos, enquanto uma coloração completa pode levar algumas horas. Nossos profissionais estão sempre dispostos a fornecer uma estimativa de tempo para cada serviço.</div></li>
+                <li class="faq inter"> <p>Vocês aceitam walk-ins ou é necessário agendar com antecedência? <span class="material-symbols-outlined add"></span> </p>
+                    <div class="faq-content">Nós operamos somente com agendamentos prévios para garantir que possamos atender nossos clientes da melhor maneira possível, reservando o tempo necessário para cada serviço.</div></li>
+                <li class="faq inter"> <p>Quais são as políticas de cancelamento e reagendamento?<span class="material-symbols-outlined add"></span> </p>
+                    <div class="faq-content">Pedimos que os clientes nos notifiquem com pelo menos 24 horas de antecedência para cancelamentos ou reagendamentos. Isso nos ajuda a ajustar nossa programação e oferecer horários a outros clientes que possam precisar. Cancelamentos tardios podem estar sujeitos a uma taxa. </div></li>
+                <li class="faq inter"> <p>Vocês oferecem serviços para ocasiões especiais, como casamentos e eventos?</p> <span class="material-symbols-outlined add"></span> </p>
+                    <div class="faq-content">Sim, oferecemos serviços especiais para casamentos, festas e outros eventos. Entre em contato conosco com antecedência para discutir suas necessidades e personalizar um pacote que atenda às suas expectativas.</div></li>
+                <li class="faq inter"> <p>Vocês oferecem promoções ou programas de fidelidade? <span class="material-symbols-outlined add"></span> </p>
+                    <div class="faq-content">Sim, periodicamente oferecemos promoções especiais e descontos em nossos serviços. Além disso, temos um programa de fidelidade onde os clientes acumulam pontos para cada serviço realizado, que podem ser resgatados por descontos ou serviços gratuitos no futuro.</div></li>
+            </ul>
+        </div>
+    </main>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Marcellus&family=Marcellus+SC&display=swap');
+    
+        .marcellus-sc-regular {
+            font-family: "Marcellus SC", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .inter{
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0;
+        }
+        .content{
+            margin-left: 50px;
+            margin-top: 80px;
+            max-width: 650px;
+            color: #7B7676;
+        }
+        .faq{
+            border-bottom: 1px #D9CDCD solid;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .faq-content {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .faq-content.active {
+            display: block;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .material-symbols-outlined.add::after {
+        content: "+";
+        }
+        .material-symbols-outlined.remove::after {
+        content: "-";
+        }
+    </style>
+    <script>
+        const faqItems = document.querySelectorAll('.faq.inter');
+    
+        faqItems.forEach(item => {
+            const question = item.querySelector('span');
+            const answer = item.querySelector('.faq-content');
+    
+            question.addEventListener('click', () => {
+                answer.classList.toggle('active');
+                question.classList.toggle('add');
+                question.classList.toggle('remove');
+            });
+        });
+    </script>
+{% endblock %} 
